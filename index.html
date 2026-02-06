@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coming Soon | Hewwit Books</title>
+  <meta name="description" content="Hewwit Books — new release coming soon." />
+
+  <!-- Use your existing site CSS so it matches your theme -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <div class="logo">
+        <span class="logo__mark">
+          <img src="images/logo.png" alt="Hewwit Books logo">
+        </span>
+      </div>
+
+      <!-- Optional: keep nav hidden on coming-soon -->
+      <div style="margin-left:auto"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 56px 0 64px;">
+      <div class="container hero__inner" style="grid-template-columns: 1fr; max-width: 820px;">
+        <div class="hero__copy" style="text-align:center;">
+          <h1 style="margin-bottom: 10px;">New book release coming soon</h1>
+
+          <p style="margin: 0 auto; max-width: 60ch;">
+            We’re putting the finishing touches on our next 11+ title. The website will be live next week.
+          </p>
+
+          <div style="margin-top: 22px; display:flex; justify-content:center; flex-wrap:wrap; gap:12px;">
+            <!-- Replace the date below -->
+            <span class="btn btn--ghost" style="cursor: default;">Launch: <strong style="color: var(--green-900);">10th February 2026</strong></span>
+
+            <!-- Optional: link to Amazon or author page if you want -->
+            <a class="btn" href="https://www.amazon.co.uk/dp/B0F22XQJVZ?binding=paperback&ref_=ast_author_bsi" target="_blank" rel="noopener noreferrer">Visit Amazon</a>
+          </div>
+
+          <div style="margin-top: 28px; display:grid; gap:10px; justify-content:center;">
+            <p class="small" style="margin: 0; max-width: 70ch;">
+              Want a reminder? Email us and we’ll let you know when the site is live.
+            </p>
+
+            <!-- This just opens an email draft; no backend needed -->
+            <a class="btn btn--small" href="mailto:support@xxx.com?subject=Notify%20me%20when%20the%20new%20book%20launches&body=Hi%20Hewwit%20Books%2C%0A%0APlease%20notify%20me%20when%20the%20new%20book%20and%20website%20are%20live.%0A%0AThanks!">
+              Email for launch reminder
+            </a>
+          </div>
+
+          <div style="margin-top: 34px;">
+            <div class="card" style="max-width: 720px; margin: 0 auto; text-align:left;">
+              <h3 style="margin-bottom: 8px;">What to expect</h3>
+              <ul style="margin: 0; padding-left: 18px;">
+                <li>New 11+ Verbal Reasoning Study Guide</li>
+                <li>Preview pages</li>
+                <li>Direct links to buy on Amazon</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Hewwit Books. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="mailto:support@hewwitbooks.co.uk">support@hewwitbooks.co.uk</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
